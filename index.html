@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NEET PG Leprosy Test Paper</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:wght@500;600&display=swap">
+<style>
+:root{--bg:#eef2f5;--card:#fff;--ink:#14213d;--mute:#5b6679;--line:#d5dce5;--acc:#2b3a8c;--acc-ink:#fff;--ok:#0f7b6c;--okbg:#e2f4f0;--bad:#b3261e;--badbg:#fbe8e6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10151f;--card:#18202e;--ink:#e8edf5;--mute:#9aa7bb;--line:#2b3649;--acc:#8fa2ff;--acc-ink:#10151f;--ok:#5fd3bf;--okbg:#123a35;--bad:#ff8b80;--badbg:#431d1a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10151f;--card:#18202e;--ink:#e8edf5;--mute:#9aa7bb;--line:#2b3649;--acc:#8fa2ff;--acc-ink:#10151f;--ok:#5fd3bf;--okbg:#123a35;--bad:#ff8b80;--badbg:#431d1a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif;min-height:100vh}
+main{max-width:720px;margin:0 auto;padding:20px 16px 48px}
+h1,h2{font-family:Newsreader,Georgia,serif;font-weight:600;line-height:1.2;margin:0}
+h1{font-size:clamp(30px,7vw,44px)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}
+.sub{color:var(--mute);margin:10px 0 22px}
+label{display:block;font-weight:500;margin-bottom:6px}
+input[type=text]{width:100%;font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+input:focus,button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+button{font:inherit;font-weight:600;border:0;border-radius:6px;padding:12px 20px;background:var(--acc);color:var(--acc-ink);cursor:pointer}
+button.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+button:disabled{opacity:.45;cursor:not-allowed}
+.err{color:var(--bad);min-height:1.4em;margin:8px 0 0;font-size:14px}
+.facts{display:flex;gap:18px;flex-wrap:wrap;margin:0 0 22px;padding:0;list-style:none;color:var(--mute);font-size:14px}
+.top{display:flex;justify-content:space-between;gap:12px;color:var(--mute);font-size:14px;margin-bottom:10px}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:18px}
+.bar i{display:block;height:100%;background:var(--acc);transition:width .25s}
+.q{font-family:Newsreader,Georgia,serif;font-size:20px;line-height:1.45;margin:0 0 18px;font-weight:500}
+.opt{display:flex;gap:12px;width:100%;text-align:left;margin:0 0 10px;padding:13px 14px;background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400}
+.opt b{flex:none;width:22px;color:var(--mute)}
+.opt.sel{border-color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc)}
+.opt.ok{background:var(--okbg);border-color:var(--ok)}
+.opt.bad{background:var(--badbg);border-color:var(--bad)}
+.exp{margin:16px 0 0;padding:14px;border-left:4px solid var(--acc);background:var(--bg);font-size:15px}
+.row{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.score{font-family:Newsreader,Georgia,serif;font-size:56px;font-weight:600;line-height:1;margin:14px 0 4px}
+.rev{border-top:1px solid var(--line);padding:14px 0}
+.rev p{margin:4px 0}
+.tag{font-weight:600}.tag.ok{color:var(--ok)}.tag.bad{color:var(--bad)}
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script>
+var Q=[
+["A 28-year-old man has multiple symmetrical shiny erythematous nodules, loss of lateral eyebrows, infiltrated ear lobes and leonine facies. Slit-skin smear BI is 5+. Which histopathological feature is expected?",["Epithelioid granuloma with Langhans giant cells reaching the epidermis","Sheets of foamy macrophages (Virchow cells) with a subepidermal Grenz zone","Caseating granuloma with central necrosis","Dense eosinophilic infiltrate with flame figures"],1,"This is lepromatous leprosy: bacilli-laden foamy macrophages with a clear Grenz zone. Option A is tuberculoid leprosy. LL = poor cell-mediated immunity (Th2); TT = strong (Th1)."],
+["Which is TRUE regarding the lepromin test?",["The Fernandez reaction is read at 21 days","The Mitsuda reaction is read at 21 days and is positive in tuberculoid leprosy","It is strongly positive in lepromatous leprosy","It is a confirmatory diagnostic test"],1,"Mitsuda (late) reaction is read at 3 weeks and reflects cell-mediated immunity: positive in TT/BT, negative in LL/BL. Fernandez is read at 48 hours. The test is prognostic and used for classification, not diagnosis."],
+["A man with lepromatous leprosy, 4 months into MDT, develops crops of painful tender erythematous nodules with fever, arthralgia and iritis. The underlying mechanism is:",["Type I hypersensitivity","Type II hypersensitivity","Type III hypersensitivity (immune complex)","Type IV hypersensitivity (delayed type)"],2,"This is Type 2 lepra reaction (ENL), an immune-complex disease of LL/BL with neutrophilic infiltrate and systemic features. Type 1 (reversal) reaction is Type IV hypersensitivity in borderline leprosy."],
+["A man has recurrent, steroid-dependent ENL. Which effective drug is contraindicated in women of childbearing age because of teratogenicity?",["Thalidomide","Dapsone","Ofloxacin","Minocycline"],0,"Thalidomide (anti-TNF-alpha) works in severe or recurrent ENL but causes phocomelia. It does not help Type 1 reactions. Higher-dose clofazimine is another steroid-sparing option. First-line for both reactions is prednisolone, with MDT continued."],
+["A Mexican patient with diffuse non-nodular skin infiltration and loss of eyebrows and eyelashes develops painful irregular necrotic leg ulcers (Lazarine leprosy). Most likely diagnosis:",["Type 1 lepra reaction","Histoid leprosy","Erythema nodosum leprosum","Lucio phenomenon"],3,"Lucio phenomenon occurs in diffuse lepromatous leprosy: necrotizing vasculitis with bacilli in endothelial cells, producing angular ulcers. Linked to M. lepromatosis; seen in untreated patients and is not a true lepra reaction."],
+["A patient has 8 hypopigmented anaesthetic patches and a positive slit-skin smear. As per India\u2019s NLEP, the correct treatment is:",["Rifampicin + Dapsone for 6 months","Rifampicin + Dapsone + Clofazimine for 12 months","Rifampicin + Clofazimine for 6 months","Rifampicin + Dapsone + Clofazimine for 24 months"],1,"This is multibacillary (6 or more lesions, more than one nerve, or smear positive). Adult MB-MDT: rifampicin 600 mg monthly, clofazimine 300 mg monthly + 50 mg daily, dapsone 100 mg daily, for 12 months."],
+["A patient on MDT for lepromatous leprosy has reddish-brown skin discolouration and dryness. Which drug is responsible?",["Rifampicin","Dapsone","Clofazimine","Ofloxacin"],2,"Clofazimine causes reddish-brown to blackish pigmentation, ichthyosis and GI upset, and also helps in ENL. Rifampicin: orange-red body fluids, hepatitis. Dapsone: haemolysis in G6PD deficiency, methaemoglobinaemia, hypersensitivity syndrome (HLA-B*13:01)."],
+["Mycobacterium leprae cannot be grown on artificial media. Which is used for its propagation?",["Lowenstein-Jensen medium","Middlebrook 7H9 broth","Chick embryo","Mouse footpad (Shepard) and nine-banded armadillo"],3,"M. leprae grows in mouse footpads and armadillos. Generation time is about 12\u201314 days and optimum temperature 30\u201333 \u00b0C, explaining its preference for cooler sites (skin, nerves, nasal mucosa, testes) and sparing of axilla, groin and scalp."],
+["Regarding bacteriological and morphological indices in leprosy, which is correct?",["Morphological index is the percentage of solid-staining (viable) bacilli","Bacteriological index is the percentage of granular bacilli","Bacteriological index is scored 0 to 10","Morphological index stays high for years after effective treatment"],0,"MI = percentage of solid-staining viable bacilli; granular or fragmented bacilli are dead. MI falls quickly with treatment. BI is a logarithmic scale of 0 to 6+ and falls slowly (about 1 log per year)."],
+["Firm shiny cutaneous nodules on the back and extremities; biopsy shows spindle-shaped histiocytes in a storiform pattern packed with acid-fast bacilli. This variant is associated with:",["Tuberculoid leprosy and a strongly positive Mitsuda test","Dapsone resistance or monotherapy relapse","Pure neuritic leprosy","Absent bacilli on smear"],1,"This is histoid leprosy, a variant of LL with very high bacillary load and spindle-cell nodules, classically linked to dapsone resistance or relapse after dapsone monotherapy."],
+["A leprosy patient has loss of sensation in hands and feet with a claw hand, but no ulcers or contractures. WHO disability grade:",["Grade 0","Grade 1","Grade 2","Grade 3"],2,"Grade 0: no anaesthesia or visible deformity. Grade 1: loss of sensation only. Grade 2: visible deformity or damage (claw hand, foot drop, ulcers, lagophthalmos). Grade 2 at diagnosis indicates delayed diagnosis."],
+["Under NLEP post-exposure prophylaxis (SDR-PEP), asymptomatic adult contacts of a newly diagnosed patient receive:",["Single dose rifampicin 600 mg","Rifampicin 600 mg monthly for 6 months","Dapsone 100 mg daily for 3 months","BCG revaccination only"],0,"Single-dose rifampicin is given to eligible contacts after excluding leprosy and TB; adult dose 600 mg, weight- or age-based for children. It cuts risk of leprosy in contacts by about 60%. The elimination target is prevalence below 1 per 10,000."]
+];
+var app=document.getElementById("app"),L="ABCD",name="",i=0,ans=[],pick=null;
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+function start(){
+ app.innerHTML='<h1>Leprosy: NEET PG test paper</h1><p class="sub">12 clinical questions in the Marrow style. Enter your name to begin.</p><div class="card"><ul class="facts"><li>12 questions</li><li>One answer each</li><li>Explanation after every answer</li></ul><label for="nm">Your name</label><input id="nm" type="text" maxlength="60" autocomplete="name" placeholder="e.g. Ananya Sharma"><p class="err" id="er" role="alert"></p><div class="row"><button id="go">Start test</button></div></div>';
+ var nm=document.getElementById("nm");
+ function go(){var v=nm.value.trim();if(v.length<2){document.getElementById("er").textContent="Enter your name to start the test.";nm.focus();return}name=v;i=0;ans=[];quiz()}
+ document.getElementById("go").onclick=go;
+ nm.onkeydown=function(e){if(e.key==="Enter")go()};
+}
+function quiz(){
+ var q=Q[i],a=ans[i],sub=a!==undefined;pick=sub?a:null;
+ var h='<div class="top"><span>'+esc(name)+'</span><span>Question '+(i+1)+' of '+Q.length+'</span></div><div class="bar"><i style="width:'+(i/Q.length*100)+'%"></i></div><div class="card"><p class="q">'+esc(q[0])+'</p>';
+ q[1].forEach(function(o,k){
+  var c="opt";if(sub){if(k===q[2])c+=" ok";else if(k===a)c+=" bad"}
+  h+='<button class="'+c+'" data-k="'+k+'"'+(sub?" disabled":"")+'><b>'+L[k]+'</b><span>'+esc(o)+'</span></button>'});
+ if(sub)h+='<div class="exp"><span class="tag '+(a===q[2]?"ok":"bad")+'">'+(a===q[2]?"Correct.":"Incorrect. Answer: "+L[q[2]]+".")+'</span> '+esc(q[3])+'</div>';
+ h+='<div class="row"><button id="act"'+(sub?"":" disabled")+'>'+(sub?(i<Q.length-1?"Next question":"See result"):"Check answer")+'</button></div></div>';
+ app.innerHTML=h;
+ var act=document.getElementById("act");
+ if(!sub){
+  app.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){
+   pick=+b.dataset.k;app.querySelectorAll(".opt").forEach(function(x){x.classList.remove("sel")});b.classList.add("sel");act.disabled=false}});
+  act.onclick=function(){if(pick===null)return;ans[i]=pick;quiz()};
+ }else act.onclick=function(){if(i<Q.length-1){i++;quiz()}else result()};
+ window.scrollTo(0,0);
+}
+function result(){
+ var s=0;Q.forEach(function(q,k){if(ans[k]===q[2])s++});
+ var pc=Math.round(s/Q.length*100),msg=pc>=80?"Strong command of leprosy.":pc>=50?"Good base. Revise the questions you missed.":"Revise the topic and retake the test.";
+ var h='<h1>Result</h1><p class="sub">'+esc(name)+'</p><div class="card"><div class="score">'+s+' / '+Q.length+'</div><p class="sub" style="margin-top:6px">'+pc+'%. '+msg+'</p><div class="row"><button id="again">Retake test</button><button class="ghost" id="newp">Change name</button></div></div><h2 style="margin:28px 0 12px">Review</h2><div class="card">';
+ Q.forEach(function(q,k){var ok=ans[k]===q[2];
+  h+='<div class="rev"><p><b>'+(k+1)+'.</b> '+esc(q[0])+'</p><p>Your answer: <span class="tag '+(ok?"ok":"bad")+'">'+L[ans[k]]+'. '+esc(q[1][ans[k]])+'</span></p>'+(ok?'':'<p>Correct: <span class="tag ok">'+L[q[2]]+'. '+esc(q[1][q[2]])+'</span></p>')+'<p style="color:var(--mute);font-size:15px">'+esc(q[3])+'</p></div>'});
+ h+='</div>';app.innerHTML=h;window.scrollTo(0,0);
+ document.getElementById("again").onclick=function(){i=0;ans=[];quiz()};
+ document.getElementById("newp").onclick=start;
+}
+start();
+</script>
+</body>
+</html>
